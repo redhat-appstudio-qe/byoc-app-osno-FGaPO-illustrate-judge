@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: bevo
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-oiza-tenant/byoc-app-osno/bevo@sha256:3a33855e7fb9e10c2a9e5f0f5180b11df8b93793fa5f105fc0f1da9e328d825c
         name: my-java-quarkus
         ports:
         - containerPort: 8081
