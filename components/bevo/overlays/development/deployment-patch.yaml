@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: bevo
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-oiza-tenant/byoc-app-osno/bevo@sha256:3a33855e7fb9e10c2a9e5f0f5180b11df8b93793fa5f105fc0f1da9e328d825c
+        name: my-java-quarkus
+        resources: {}
+status: {}
